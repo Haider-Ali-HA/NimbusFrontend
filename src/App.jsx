@@ -6,16 +6,18 @@ import Footer from "./component/Footer";
 import About from "./component/About";
 import Pricing from "./component/Pricing";
 import Client from "./component/Client";
+import Contact from "./component/Contact";
 
 const App = () => {
   return (
     <Router>
       <Navbar />
-      <Home />
+      {/* <Home />
       <Pricing />
       <Client />
       <About />
-      <Footer />
+      <Contact />
+      <Footer /> */}
     </Router>
   );
 };

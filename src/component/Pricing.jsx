@@ -8,10 +8,10 @@ import image6 from "../assets/chart.png";
 
 const Pricing = () => {
   return (
-    <div className="py-10 flex flex-col items-center">
+    <div className="py-10 flex flex-col items-center font-inter">
       {/* Pricing Numbers Section */}
       <div className="flex gap-56 items-center justify-center ">
-        <div className="text-black">
+        <div className="text-black font-inter">
           <p className="text-start font-bold text-5xl">
             <span className="text-primary mr-1">1</span>Rupee
           </p>
@@ -24,10 +24,10 @@ const Pricing = () => {
             startups.
           </p>
         </div>
-        <div className="flex items-center gap-3 h-full -mt-20">
+        <div className="flex items-center gap-3 h-full font-inter -mt-10">
           <p className=" text-xl font-semibold -mt-20">PKR</p>
-          <p className="text-primary h-full text-[18rem] font-semibold">1</p>
-          <p className=" text-xl font-semibold mt-56">Only</p>
+          <p className="text-primary h-full text-[15rem] font-semibold">1</p>
+          <p className=" text-xl font-semibold mt-36">Only</p>
         </div>
       </div>
 

@@ -41,7 +41,7 @@ const testimonials = [
 const Client = () => {
   return (
     <>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 font-inter">
         <div
           className="bg-cover bg-center flex flex-col items-center justify-center py-24 text-white text-center"
           style={{ backgroundImage: `url(${clientBg})` }}

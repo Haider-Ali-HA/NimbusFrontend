@@ -4,7 +4,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[#FAFAFB] flex flex-col  gap-10 p-28">
+    <div className="bg-[#FAFAFB] flex flex-col  gap-10 p-28 font-inter">
       <div className="flex justify-between items-center ">
         <h1 className="font-semibold text-4xl w-[31rem]">
           Learn how to grow {String.fromCodePoint(0x1f4aa)} audience fast in
