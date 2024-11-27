@@ -1,12 +1,12 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 
 const Footer = () => {
   return (
-    <div className="bg-gray-200 flex flex-col  gap-10 p-20">
+    <div className="bg-[#FAFAFB] flex flex-col  gap-10 p-28">
       <div className="flex justify-between items-center ">
-        <h1 className="font-semibold text-4xl w-1/4">
+        <h1 className="font-semibold text-4xl w-[31rem]">
           Learn how to grow {String.fromCodePoint(0x1f4aa)} audience fast in
           Twitter
         </h1>

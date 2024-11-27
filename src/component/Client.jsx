@@ -10,11 +10,37 @@ import client8 from "../assets/client8.png";
 import clientBg from "../assets/client-bg.png";
 import { IoPlayCircleOutline } from "react-icons/io5";
 import videoThumbnail from "../assets/video-thumbnail.png";
-import { Link, BrowserRouter as Router } from "react-router-dom";
+import { Link } from "react-scroll";
+import profile1 from "../assets/profile1.png"; // Replace with the actual paths to your profile images
+import profile2 from "../assets/profile1.png";
+import profile3 from "../assets/profile1.png";
 
+const testimonials = [
+  {
+    image: profile1,
+    name: "Darlene Robertson",
+    title: "Product Manager at Jomanar",
+    quote:
+      "We love Landingfolio! Our designers were using it for their projects, so clients already knew what Landingfolio was and how to use it.",
+  },
+  {
+    image: profile2,
+    name: "Bessie Cooper",
+    title: "Freelance UX Designer",
+    quote:
+      "I didn’t know designing in Webflow could be this individualized. I'd never considered it before, but Landingfolio changed my mind.",
+  },
+  {
+    image: profile3,
+    name: "Arlene McCoy",
+    title: "Product Designer at Martina.co",
+    quote:
+      "We love Landingfolio! Our designers were using it for their projects, so clients already knew what Landingfolio was and how to use it.",
+  },
+];
 const Client = () => {
   return (
-    <Router>
+    <>
       <div className="flex flex-col gap-10">
         <div
           className="bg-cover bg-center flex flex-col items-center justify-center py-24 text-white text-center"
@@ -51,7 +77,29 @@ const Client = () => {
           </div>
         </div>
       </div>
-    </Router>
+      {/*  testimonials */}
+      <div className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                className="text-center  p-6 rounded-lg shadow-sm"
+              >
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="w-20 h-20 rounded-full mx-auto mb-4"
+                />
+                <h3 className="text-lg font-semibold">{testimonial.name}</h3>
+                <p className="text-sm text-gray-600">{testimonial.title}</p>
+                <p className="mt-4 text-black font-semibold">{testimonial.quote}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -18,11 +18,11 @@ const Home = () => {
           </p>
         </div>
 
-        <h1 className="text-5xl w-[30%] text-center font-semibold">
+        <h1 className="text-5xl w-[38rem] text-center font-semibold">
           Get Cloud Point of Sale for your Brand
         </h1>
 
-        <p className="w-1/3 text-secondary text-center">
+        <p className="w-[36rem] text-secondary text-center">
           Powerfull, self-serve product and growth analytics to help you
           convert, engage, and retain more users. Trust by over 4,000 startups.
         </p>
@@ -43,7 +43,7 @@ const Home = () => {
 
       {/* <-----laptop image ----->  */}
       <div className="">
-        <img className="w-4/5 mx-auto"  src={laptopImage} alt="laptop image" />
+        <img className="w-4/5 mx-auto" src={laptopImage} alt="laptop image" />
       </div>
     </div>
   );
