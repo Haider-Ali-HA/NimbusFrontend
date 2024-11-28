@@ -15,9 +15,9 @@ const App = () => {
       <Home />
       <Pricing />
       <Client />
-      {/* <About /> */}
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <About />
+      <Contact />
+      <Footer />
     </Router>
   );
 };

@@ -12,8 +12,8 @@ import { IoPlayCircleOutline } from "react-icons/io5";
 import videoThumbnail from "../assets/video-thumbnail.png";
 import { Link } from "react-scroll";
 import profile1 from "../assets/profile1.png"; // Replace with the actual paths to your profile images
-import profile2 from "../assets/profile1.png";
-import profile3 from "../assets/profile1.png";
+import profile2 from "../assets/profile2.jpeg";
+import profile3 from "../assets/profile3.jpg";
 
 const testimonials = [
   {
@@ -66,27 +66,27 @@ const Client = () => {
             <img
               src={client4}
               alt="Tinygone"
-              className="dm:ml-10  w-24 md:w-32 lg:w-52"
+              className="sm:ml-10  w-24 md:w-32 lg:w-52"
             />
             <img
               src={client5}
               alt="Preso"
-              className="dm:ml-10  w-24 md:w-32 lg:w-52"
+              className="sm:ml-10  w-24 md:w-32 lg:w-52"
             />
             <img
               src={client6}
               alt="Ridoria"
-              className="dm:ml-10  w-24 md:w-32 lg:w-52"
+              className="sm:ml-10  w-24 md:w-32 lg:w-52"
             />
             <img
               src={client7}
               alt="Carbonia"
-              className="dm:ml-20  w-24 md:w-32 lg:w-52"
+              className="sm:ml-20  w-24 md:w-32 lg:w-52"
             />
             <img
               src={client8}
               alt="Incanto"
-              className="dm:ml-20  w-24 md:w-32 lg:w-52"
+              className="sm:ml-20  w-24 md:w-32 lg:w-52"
             />
           </div>
         </div>

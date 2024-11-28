@@ -1,12 +1,11 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
-
 const Footer = () => {
   return (
-    <div className="bg-[#FAFAFB] flex flex-col  gap-10 p-28 font-inter">
-      <div className="flex justify-between items-center ">
-        <h1 className="font-semibold text-4xl w-[31rem]">
+    <div className="bg-[#FAFAFB] flex flex-col  gap-10 p-10 lg:p-28 font-inter">
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-5">
+        <h1 className="font-semibold text-3xl lg:text-4xl w-full sm:w-2/4 lg:w-[31rem]">
           Learn how to grow {String.fromCodePoint(0x1f4aa)} audience fast in
           Twitter
         </h1>
@@ -15,12 +14,12 @@ const Footer = () => {
         </button>
       </div>
       <hr className="border-gray-300" /> {/* Changed class to border-red-500 */}
-      <div className="grid grid-cols-5 ">
-        <div className="col-span-2 gap-2 grid">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 md:grid-cols-5 ">
+        <div className="sm:col-span-2 gap-2 grid">
           {" "}
           {/* Added col-span-2 */}
           <h1 className="text-lg font-semibold">About Rareblocks</h1>
-          <p className="w-1/2 text-gray-600">
+          <p className="w-5/6 lg:w-3/4 text-gray-600">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
             culpa quae temporibus magni quisquam, minus sed doloribus odit
             dolorum ad distinctio facere rem, eos incidunt itaque nostrum amet,
