@@ -10,7 +10,7 @@ import client8 from "../assets/client8.png";
 import clientBg from "../assets/client-bg.png";
 import { IoPlayCircleOutline } from "react-icons/io5";
 import videoThumbnail from "../assets/video-thumbnail.png";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import profile1 from "../assets/profile1.png"; // Replace with the actual paths to your profile images
 import profile2 from "../assets/profile2.jpeg";
 import profile3 from "../assets/profile3.jpg";
