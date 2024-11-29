@@ -5,7 +5,8 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { RiMenu3Fill } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -13,6 +14,7 @@ const Navbar = () => {
   const open = Boolean(anchorEl);
   const location = useLocation();
   const navbarRef = useRef(null);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -43,26 +45,64 @@ const Navbar = () => {
     };
   }, [navbarRef]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className="flex items-center justify-between px-12 md:px-36 h-28 w-full font-inter">
+      <div className={`flex fixed items-center bg-white z-20 justify-between px-12 md:px-36 h-28 w-full font-inter ${scrolled ? 'shadow' : ''}`}>
         {/* logo */}
-        <div className="flex gap-2">
+
+        <Link
+          className="flex gap-2 cursor-pointer"
+          to="Home"
+          offset={-100}
+          smooth={true}
+          duration={500}
+        >
           <img
             className="w-10 h-10 lg:w-20 lg:h-20"
             src={logo}
             alt="nimbus logo"
           />
           <h1 className="font-bold lg:text-3xl w-16 lg:w-32">Nimbus 360</h1>
-        </div>
+        </Link>
 
         {/* navlinks */}
         <div className="hidden lg:flex gap-12">
           <ul className="flex gap-10 items-center font-semibold">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Pricing</li>
+            <li className="cursor-pointer border-b border-white hover:border-b hover:border-black transition-all duration-200">
+              <Link to="Home" offset={-100} smooth={true} duration={500}>
+                Home
+              </Link>
+            </li>
+            <li className="cursor-pointer border-b border-white hover:border-b hover:border-black transition-all duration-200">
+              <Link to="Pricing" offset={-100} smooth={true} duration={500}>
+                Pricing
+              </Link>
+            </li>
+            <li className="cursor-pointer border-b border-white hover:border-b hover:border-black transition-all duration-200">
+              <Link to="About" offset={-100} smooth={true} duration={500}>
+                About
+              </Link>
+            </li>
+            <li className="cursor-pointer border-b border-white hover:border-b hover:border-black transition-all duration-200">
+              <Link to="Contact" offset={-100} smooth={true} duration={500}>
+                Contact
+              </Link>
+            </li>
           </ul>
           <div>
             <Button
@@ -109,10 +149,18 @@ const Navbar = () => {
           <RxCross2 className="text-2xl text-black" />
         </div>
         <ul className="flex flex-col gap-5 items-center font-semibold">
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Pricing</li>
+          <Link to="Home" offset={-100} smooth={true} duration={500}>
+            Home
+          </Link>
+          <Link to="Pricing" offset={-100} smooth={true} duration={500}>
+            Pricing
+          </Link>
+          <Link to="About" offset={-100} smooth={true} duration={500}>
+            About
+          </Link>
+          <Link to="Contact" offset={-100} smooth={true} duration={500}>
+            Contact
+          </Link>
         </ul>
 
         <div>

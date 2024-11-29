@@ -32,7 +32,7 @@ const About = () => {
     },
   ];
   return (
-    <div className="font-inter">
+    <div id="About" className="font-inter">
       {/* About Section */}
       <div>
         <div className="flex flex-col items-center justify-center gap-4 py-10">

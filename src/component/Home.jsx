@@ -5,9 +5,9 @@ import laptopImage from "../assets/laptop.png";
 
 const Home = () => {
   return (
-    <div className="bg-re-400 font-inter h-full w-full flex flex-col gap-10   items-center ">
+    <div id="Home" className="bg-re-400 font-inter h-full w-full flex flex-col gap-10   items-center ">
       {/* <-----hero section start----->  */}
-      <section className="w-full flex flex-col h-full mt-10 md:mt-20 justify-center items-center gap-10">
+      <section className="w-full flex flex-col h-full mt-56 justify-center items-center gap-10">
         <div className="bg-[#F9F5FF] text-xs md:text-base flex items-center text-primary justify-center md:gap-1 gap-3 h-7 md:h-9 px-1 rounded-full">
           <p className="bg-white flex items-center justify-center rounded-full h-5 md:h-7 px-1 md:px-2 ">
             New Feature

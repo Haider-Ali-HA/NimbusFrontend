@@ -8,7 +8,7 @@ import image6 from "../assets/chart.png";
 
 const Pricing = () => {
   return (
-    <div className="py-10 flex flex-col items-center font-inter">
+    <div id="Pricing" className="py-10 flex flex-col items-center font-inter">
       {/* Pricing Numbers Section */}
       <div className="flex flex-col sm:flex-row gap-24 lg:gap-56 items-center justify-center ">
         <div className="text-black font-inter mt-10">
