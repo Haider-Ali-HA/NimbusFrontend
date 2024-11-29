@@ -34,13 +34,15 @@ const Pricing = () => {
       </div>
 
       {/* User-Centric Steps Section */}
-      <div className="flex flex-col items-center justify-center py-10">
-        <h1 className="font-semibold text-3xl text-center px-5">Make every step user-centric</h1>
+     <div className="flex flex-col items-center justify-center py-10">
+        <h1 className="font-semibold text-3xl text-center px-5">
+          Make every step user-centric
+        </h1>
         <p className="text-secondary text-center mt-7 px-4">
           Lorem ipsum dolor sit, amet consectetur
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  mt-8 px-12 md:px-32 w-full">
-          {/* Individual Grid Items with unique borders */}
+        <div className="ruled-grid mt-8 px-12 md:px-32">
+          {/* Grid Items */}
           {[
             { image: image1, title: "Support" },
             { image: image2, title: "Sales" },
@@ -51,17 +53,15 @@ const Pricing = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center gap-5 p-6 bg-white ${item.borderClass}`}
+              className="card bg-white flex flex-col items-center gap-5 p-6"
             >
               <img
                 className="mx-auto h-12 w-12"
                 src={item.image}
                 alt={item.title}
               />
-              <h1 className="font-semibold text-lg text-center">
-                {item.title}
-              </h1>
-              <p className="text-center text-secondary text-sm">
+              <h1 className="font-semibold text-lg">{item.title}</h1>
+              <p className="text-secondary text-sm text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
                 enim nec, proin faucibus nibh et sagittis a.
               </p>

@@ -1,5 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Pricing Grid Layout */
+.ruled-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  /* Before lg screen */
+  .ruled-grid {
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+  }
+}
+
+@media (max-width: 640px) {
+  /* Below sm screen */
+  .ruled-grid {
+    grid-template-columns: 1fr; /* Switch to 1 column */
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  border-right: 1px solid rgb(212, 212, 212); /* Right border for inner gridlines */
+  border-bottom: 1px solid rgb(212, 212, 212); /* Bottom border for inner gridlines */
+}
+
+/* Remove right border for the last column in 3-column layout */
+@media (min-width: 1024px) {
+  .card:nth-child(3n) {
+    border-right: none; /* Remove right border for the last column */
+  }
+}
+
+/* Remove bottom border for the last row in 3-column layout */
+@media (min-width: 1024px) {
+  .card:nth-last-child(-n + 3) {
+    border-bottom: none; /* Remove bottom border for the last row */
+  }
+}
+
+/* Adjust border styles for 2-column layout (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .card:nth-child(2n) {
+    border-right: none; /* Remove right border for the last column in 2-column layout */
+  }
+}
+
+/* Remove bottom border for the last row in 2-column layout */
+@media (max-width: 1024px) {
+  .card:nth-last-child(-n + 2) {
+    border-bottom: none; /* Remove bottom border for the last row */
+  }
+}
+
+/* Special adjustment for 1-column grid (below sm screen) */
+@media (max-width: 640px) {
+  .card {
+    border-right: none; /* No right border for single column */
+    border-bottom: 1px solid rgb(212, 212, 212); /* Keep bottom border for all cards */
+  }
+
+  /* Ensure each card has a bottom border */
+  .card:not(:last-child) {
+    border-bottom: 1px solid rgb(212, 212, 212); /* Add bottom border except for the last card */
+  }
+
+  /* Remove the last card's bottom border */
+  .card:last-child {
+    border-bottom: none; /* Optionally remove the bottom border of the last card */
+  }
+}
