@@ -63,7 +63,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`flex fixed items-center bg-white z-20 justify-between px-12 md:px-36 h-28 w-full font-inter ${
+        className={`flex fixed items-center bg-white z-20 justify-between px-12 md:px-36 h-20 w-full font-inter ${
           scrolled ? "shadow" : ""
         }`}
       >
@@ -77,11 +77,11 @@ const Navbar = () => {
           duration={500}
         >
           <img
-            className="w-10 h-10 lg:w-20 lg:h-20"
+            className="w-10 h-10 lg:w-16 lg:h-16"
             src={logo}
             alt="nimbus logo"
           />
-          <h1 className="font-bold lg:text-3xl w-16 lg:w-32">Nimbus 360</h1>
+          <h1 className="font-bold lg:text-2xl w-16 lg:w-32">Nimbus 360</h1>
         </Link>
 
         {/* navlinks */}
