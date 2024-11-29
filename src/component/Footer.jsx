@@ -34,7 +34,7 @@ const Footer = () => {
               <FaFacebook className="text-xl" />
             </a>
 
-            <a href="">
+            <a href="https://www.instagram.com/hexlertech/">
               <FaInstagram className="text-xl" />
             </a>
             <a href="">
