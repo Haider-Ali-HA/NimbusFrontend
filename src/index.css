@@ -69,12 +69,12 @@
 @media (max-width: 640px) {
   .card {
     border-right: none; /* No right border for single column */
-    border-bottom: 1px solid rgb(241, 241, 241); /* Keep bottom border for all cards */
+    border-bottom: 2px solid rgb(241, 241, 241); /* Keep bottom border for all cards */
   }
 
   /* Ensure each card has a bottom border */
   .card:not(:last-child) {
-    border-bottom: 1px solid rgb(241, 241, 241); /* Add bottom border except for the last card */
+    border-bottom: 2px solid rgb(241, 241, 241); /* Add bottom border except for the last card */
   }
 
   /* Remove the last card's bottom border */
