@@ -11,24 +11,34 @@ const About = () => {
 
   const faqs = [
     {
-      question: "What is the purpose of this website?",
+      question: "Is there a free trial available?",
       answer:
-        "The purpose of this website is to provide a platform for users to learn about the latest technologies and trends in the tech industry. We aim to provide valuable information to help users make informed decisions about their tech purchases.",
+        "Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
     },
     {
-      question: "How can I contribute to this website?",
+      question: "Can I change my plan later?",
       answer:
-        "If you would like to contribute to this website, please contact us at",
+        "Yes, you can upgrade or downgrade your plan at any time from your account settings.",
     },
     {
-      question: "How can I contact customer support?",
+      question: "What is your cancellation policy?",
       answer:
-        "If you have any questions or concerns, please contact our customer support team at",
+        "You can cancel your subscription at any time. Your account will remain active until the end of your current billing period.",
     },
     {
-      question: "How can I advertise on this website?",
+      question: "Can other info be added to an invoice?",
       answer:
-        "If you are interested in advertising on this website, please contact our sales team at",
+        "Yes, you can add additional information to your invoices from your account settings.",
+    },
+    {
+      question: "How does billing work?",
+      answer:
+        "Billing is done on a monthly basis. You will be charged at the beginning of each billing cycle.",
+    },
+    {
+      question: "How do I change my account email?",
+      answer:
+        "You can change your account email from your account settings. A confirmation email will be sent to your new email address.",
     },
   ];
   return (
