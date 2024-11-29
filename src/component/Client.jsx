@@ -47,46 +47,46 @@ const Client = () => {
           style={{ backgroundImage: `url(${clientBg})` }}
         >
           <h2 className="mb-8 text-xl text-secondary">Our Clients</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 items-center justify-center gap-y-5 gap-x-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 items-center justify-center gap-y-9 gap-x-10">
             <img
               src={client1}
               alt="Waverio"
-              className=" w-24 md:w-32 lg:w-52"
+              className=" w-24 md:w-28 lg:w-36"
             />
             <img
               src={client2}
               alt="Loggipsum"
-              className=" w-24 md:w-32 lg:w-52"
+              className=" w-24 md:w-28 lg:w-36"
             />
             <img
               src={client3}
               alt="Alterbone"
-              className=" w-24 md:w-32 lg:w-52"
+              className=" w-24 md:w-28 lg:w-36"
             />
             <img
               src={client4}
               alt="Tinygone"
-              className="sm:ml-10  w-24 md:w-32 lg:w-52"
+              className="sm:ml-10  w-24 md:w-28 lg:w-36"
             />
             <img
               src={client5}
               alt="Preso"
-              className="sm:ml-10  w-24 md:w-32 lg:w-52"
+              className="sm:ml-10  w-24 md:w-28 lg:w-36"
             />
             <img
               src={client6}
               alt="Ridoria"
-              className="sm:ml-10  w-24 md:w-32 lg:w-52"
+              className="sm:ml-10  w-24 md:w-28 lg:w-36"
             />
             <img
               src={client7}
               alt="Carbonia"
-              className="sm:ml-20  w-24 md:w-32 lg:w-52"
+              className="sm:ml-20  w-24 md:w-28 lg:w-36"
             />
             <img
               src={client8}
               alt="Incanto"
-              className="sm:ml-20  w-24 md:w-32 lg:w-52"
+              className="sm:ml-20  w-24 md:w-28 lg:w-36"
             />
           </div>
         </div>

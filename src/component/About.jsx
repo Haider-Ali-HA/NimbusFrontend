@@ -65,7 +65,7 @@ const About = () => {
             </p>
             <p className="text-primary font-semibold">
               {" "}
-              support@untitledui.com
+              support@hexlertech.com
             </p>
           </div>
           <div className="text-center">
@@ -73,12 +73,12 @@ const About = () => {
             <p className="text-secondary my-2">
               Questions or queries? Get in touch!
             </p>
-            <p className="text-primary font-semibold"> sales@untitledui.com</p>
+            <p className="text-primary font-semibold"> sales@hexlertech.com</p>
           </div>
           <div className="text-center">
             <h1 className="text-xl lg:text-2xl font-semibold">Phone</h1>
             <p className="text-secondary my-2">Mon-Fri from 8am to 5pm</p>
-            <p className="text-primary font-semibold"> +1 (555) 000-0000</p>
+            <p className="text-primary font-semibold"> +92-344-9200674</p>
           </div>
         </div>
       </div>
