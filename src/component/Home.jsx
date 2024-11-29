@@ -20,11 +20,11 @@ const Home = () => {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-4xl lg:text-5xl w-5/6 md:w-[38rem] text-center font-semibold">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl w-5/6 md:w-[45rem] text-center font-semibold">
           Get Cloud Point of Sale for your Brand
         </h1>
 
-        <p className="w-5/6 md:w-[36rem] text-secondary text-center">
+        <p className="w-5/6 md:w-[39rem] text-secondary text-center">
           Powerfull, self-serve product and growth analytics to help you
           convert, engage, and retain more users. Trust by over 4,000 startups.
         </p>

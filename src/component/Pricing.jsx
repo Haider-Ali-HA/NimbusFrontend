@@ -18,7 +18,7 @@ const Pricing = () => {
           <p className="text-end font-bold text-3xl sm:text-4xl pr-4 sm:pr-0 lg:text-5xl">
             Per <span className="text-primary">Receipt</span>
           </p>
-          <p className="text-secondary text-center w-80 mt-4 px-4">
+          <p className="text-secondary text-center w-96 mt-4 px-4">
             Powerful, self-serve product and growth analytics to help you
             convert, engage, and retain more users. Trusted by over 4,000
             startups.
