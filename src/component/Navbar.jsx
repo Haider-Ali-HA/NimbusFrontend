@@ -62,7 +62,11 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={`flex fixed items-center bg-white z-20 justify-between px-12 md:px-36 h-28 w-full font-inter ${scrolled ? 'shadow' : ''}`}>
+      <div
+        className={`flex fixed items-center bg-white z-20 justify-between px-12 md:px-36 h-28 w-full font-inter ${
+          scrolled ? "shadow" : ""
+        }`}
+      >
         {/* logo */}
 
         <Link
@@ -106,15 +110,20 @@ const Navbar = () => {
           </ul>
           <div>
             <Button
-              id="basic-button"
               aria-controls={open ? "basic-menu" : undefined}
               aria-haspopup="true"
               aria-expanded={open ? "true" : undefined}
               onClick={handleClick}
-              className="!bg-primary shadow-sm !hover:bg-opacity-80  !text-white !px-5 !py-2 !rounded"
+              className="!bg-primary shadow-sm !text-white !px-5 !py-2 !rounded"
+              sx={{
+                "&:hover": {
+                  opacity: 0.8, // Reduce opacity on hover
+                },
+              }}
             >
               Login
             </Button>
+
             <Menu
               id="basic-menu"
               anchorEl={anchorEl}
@@ -170,7 +179,7 @@ const Navbar = () => {
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
             onClick={handleClick}
-            className="!bg-primary shadow-sm !hover:bg-opacity-80  !text-white !px-5 !py-2 !rounded"
+            className="!bg-primary shadow-sm hover:bg-opacity-80 !text-white !px-5 !py-2 !rounded"
           >
             Login
           </Button>
